@@ -15,7 +15,6 @@ body {
 }
 
 .header {
-  /*background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; */
   background-image: url("imatge.jpg");
   background-size: cover;
   height: 800px;
@@ -36,9 +35,56 @@ body {
   text-transform: uppercase; 
 }
 
-@media (min-width:850px) {
+@media (min-width:991px) {
   .header h1 {
     font-size: 100px;
+  }
+
+  .movil {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 100px;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .movil {
+    width: 99%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .header h1 {
+    font-size: 100px;
+  }
+
+  .movil {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    width: 99%;
+    text-align: center;
   }
 }
 

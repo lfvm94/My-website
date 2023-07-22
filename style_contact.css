@@ -17,7 +17,7 @@ body {
 .header {
   background-image: url("contact_cover.jpg");
   background-size: cover;
-  height: 800px;
+  height: 400px;
   text-align: center; 
 }
 
@@ -35,9 +35,57 @@ body {
   text-transform: uppercase; 
 }
 
-@media (min-width:850px) {
+@media (min-width:991px) {
   .header h1 {
     font-size: 80px;
+  }
+
+
+  .tablet {
+    display: none;
+  }
+
+  .movil {
+    display: none;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 990px) {
+  .header h1 {
+    font-size: 80px;
+  }
+
+  .movil {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    width: 99%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 80px;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .movil {
+    width: 99%;
+    text-align: center;
   }
 }
 
